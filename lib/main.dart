@@ -1,5 +1,6 @@
+import 'package:firstapp/columnWidget.dart';
+import 'package:firstapp/rowWidget.dart';
 import 'package:flutter/material.dart';
-import 'containers_padding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ContainersPadding(),
+      home: const ColumnWidget(),
     );
   }
 }
