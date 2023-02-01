@@ -1,7 +1,6 @@
+import 'package:firstapp/buttons.dart';
 import 'package:flutter/material.dart';
-
-import 'asset_image.dart';
-import 'image.dart';
+import 'icons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Asset_Image(),
+      home: const Buttons(),
     );
   }
 }
