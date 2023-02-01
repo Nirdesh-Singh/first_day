@@ -1,6 +1,5 @@
-import 'package:firstapp/buttons.dart';
 import 'package:flutter/material.dart';
-import 'icons.dart';
+import 'containers_padding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Buttons(),
+      home: const ContainersPadding(),
     );
   }
 }
