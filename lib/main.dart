@@ -1,5 +1,7 @@
-import 'package:firstapp/scaff.dart';
 import 'package:flutter/material.dart';
+
+import 'asset_image.dart';
+import 'image.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ScaffAppBar(),
+      home: const Asset_Image(),
     );
   }
 }
