@@ -1,0 +1,40 @@
+void main() {
+  List<String> list = ['nirdesh', 'ashutosh', 'arsh'];
+  print(list);
+  
+  list.add('yash');
+  print(list);
+  
+  list.remove('nirdesh');
+  print(list);
+  // list.add(30);
+  
+  User obj = User('Nirdesh', 1234);
+  print(obj.username);
+  print(obj.password);
+  obj.login();
+  // obj.ask();
+  
+  SuperUser obj2 = SuperUser('Pranshu', 3456);
+  print(obj2.username);
+  obj2.ask();
+}
+
+class User {
+  late String username;
+  late int password;
+  
+  User(String username, int password) {
+    this.username = username;
+    this.password = password;
+  }
+  
+  void login() => print('User logged in');
+}
+
+class SuperUser extends User {
+  SuperUser(String username, int password) : super(username, password);
+  void ask() {
+    print('How are you !');
+  }
+}

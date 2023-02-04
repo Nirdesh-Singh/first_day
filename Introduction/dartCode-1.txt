@@ -1,0 +1,22 @@
+void main() {
+  String name = 'Nirdesh';
+  print(name);
+  
+  int myAge = age();
+  print(myAge);
+  
+  greeting();
+  
+  bool flag = true;
+  
+  dynamic a = 'Singh';
+  print('$name - $age - $flag - $a');
+  
+  a = 20;
+  
+  print('$name - $age - $flag - $a');
+}
+
+void greeting() => print('Hi, How are you ?');
+
+int age() => 21;
